@@ -1,0 +1,107 @@
+<!--
+auteur : Louis Gerard
+contact : 0476/02.98.05
+-->
+<html>
+	<head>
+		<title> Duo Catering </title>
+		<link rel="stylesheet" href="mainPageStyles.css">
+		<script src="scripts.js"></script>
+		<script src="jquery-3.3.1.min.js"></script>
+		<meta charset= "utf-8">
+	</head>
+
+	<body>
+		<header>
+			<h1> BESOIN D'AIDE ?</h1>
+			<br><br>
+		</header>
+			<div id=logo>
+				<p>	<img src="duo.jpg" onclick="retour()" width="150" height="112"> </p>
+			</div>
+	
+			<div id="contactText"> <b>CONTACT</b> 
+				<input id=contactezMoi type="image" src="phone.png" onclick="goToContact()" width="50" height="50">
+				<!--<p> Besoin <br> d'aide ? </p>--> 
+			</input>
+			</div>
+			
+
+		<br>
+		<main>
+			<ol id="aide">
+			<button class="accordion">Comment ajouter un produit ?</button>
+			<!--<li id="questions"> Comment ajouter un produit ? </li>-->
+				<div class="panel">
+				<ol>
+					<li> Cliquer sur le "+" (Ajouter un produit) sur la page principale du site.</li>
+					<li> Charger un fichier et valider. </li>
+					<li> Entrer le nom du produit sans oublier le séparateur "-" entre les mots si besoin. </li>
+					<li> Entrer le code du produit. </li>
+					<li> Cocher tous les allergènes de ce produit. </li>
+					<li> Cliquer sur "ajouter". </li>
+					<li> Répéter tant qu'il y a des produits à ajouter. </li>
+					<li> Cliquer sur "valider" pour terminer la liste d'ajout. </li>
+					<li> Le fichier validé se trouve dans les téléchargements et est du type : savedProduits.txt .</li>
+				</ol>
+				</div>
+			<button class="accordion">Comment supprimer un produit ?</button>
+			<!--<li id="questions"> Comment supprimer un produit ? </li>-->
+				<div class="panel">
+				<ol>
+					<li> Cliquer sur le "+" (Ajouter un produit) sur la page principale du site. </li>
+					<li> Charger un fichier et valider. </li>
+					<li> Entrer le nom du produit à supprimer.</li>
+					<li> Cliquer sur "supprimer". </li>
+					<li> Le fichier mis à jour se trouve dans les téléchargements et est du type : savedProduits.txt .</li>
+					<li> La suppression d'un produit crée automatiquement un nouveau fichier savedProduits.txt . </li>
+				</ol>
+				</div>
+			<!--<li id="questions"> Comment remplir la feuille de production ? </li>-->
+			<button class="accordion">Comment remplir la feuille de production ?</button>
+				<div class="panel">
+				<ol>
+					<li> Cliquer sur "Fiche de Production". </li>
+					<li> Charger un fichier et valider. </li>
+					<li> Remplir les repas. </li>
+					<li> Choisir la date. </li>
+					<li> Choisir l'exploitation. </li>
+					<li> Remplir le tableau de produits. </li>
+				</ol>
+				</div>
+			<!--<li id="questions"> Comment imprimer la feuille de production ? </li>-->
+			<button class="accordion">Comment imprimer la feuille de production ?</button>
+				<div class="panel">
+				<ul>
+					 Cliquer sur ctrl+p ou clique droit --> imprimer.
+				</ul>
+				</div>
+			</ol>
+		</main>
+		<footer>
+			<p style=text-align:center> 
+				<input type="image" src="return.png" onclick="retour()" width="50" height="50">
+				<b> RETOUR </b>
+			</p><br> 
+		</footer>
+		
+		<script>
+			var acc = document.getElementsByClassName("accordion");
+			var i;
+
+			for (i = 0; i < acc.length; i++) {
+				acc[i].addEventListener("click", function() {
+					this.classList.toggle("active");
+					var panel = this.nextElementSibling;
+					if (panel.style.display === "block") {
+						panel.style.display = "none";
+					} else {
+						panel.style.display = "block";
+					}
+				});
+			}
+		</script>
+
+	</body>
+	
+</html>

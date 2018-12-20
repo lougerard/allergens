@@ -1,0 +1,191 @@
+/*
+auteur : Louis Gerard
+contact : 0476/02.98.05
+*/
+body {
+	//background-color: lightgrey;
+	background-color:none;
+}
+h1 {
+     color: green;
+     text-align: center;
+}
+.marge {
+	margin: 0 0 0 400px; 
+	
+}
+p {
+    color: black;
+    height: 10;
+    text-align: left;
+}
+.myp {
+    color: black;
+    position: relative;
+    left: 0px;
+    top:0px;
+}
+
+select {
+    text-align: center;
+    border: none;
+   -webkit-appearance: none; 
+   -moz-appearance: none;
+   appearance: none;       /* remove default arrow */
+   background-image: url(...);   /* add custom arrow */
+}
+
+myh1 {
+	color : green;
+	text-align : left;
+}
+
+#cssTable td 
+{
+    vertical-align:middle;
+}
+#cssTable 
+{
+    vertical-align:middle;
+	border: 2px solid black;
+	width:100%;
+}
+main
+{
+	display:block;
+	
+}
+footer
+{
+    text-align:center;
+    position: relative;
+    bottom : -1000px;
+    width:100%;
+    /*display:inline-block;*/
+    vertical-align:top;
+    font-size:13px;
+	border: 2px solid black;
+	
+}
+#envoi 
+{
+	position: relative;
+    bottom : -520px;
+	width : 10em;
+	height : 2em;
+	margin-left : 2em;
+}
+#cssTableFooter
+{
+	width:100%;
+}
+#cssTableM  td 
+{
+	padding-bottom:10px;
+	padding-top:10px;
+	text-align : center;
+    vertical-align:middle;
+	border: 1px solid black;
+}
+#quantite 
+{
+	text-align:center;
+	width:7em;
+}
+#ingredient 
+{
+	width:7em;
+}
+#cssTableM 
+{
+	border-collapse: collapse;
+	text-align : center;
+    vertical-align:middle;
+	border: 2px solid black;
+	width:100%;
+}
+#form {
+	text-align : center;
+}
+
+
+/*----------------------------------*/
+/* ICI BAS POUR AJOUTERPRODUIT.HTML */
+/*----------------------------------*/
+
+#ajoutTable
+{
+	margin-left : 10em;
+	border-collapse: collapse;
+    vertical-align:middle;
+	border: 2px solid black;
+	//border: none;
+	width:80%;
+}
+#ajoutTable td
+{
+	border: 2px solid black;
+	//border: none;
+}
+
+#text {
+	vertical-align:middle;
+}
+#ajout {
+	font-size : 20;
+	margin-left : 2em;
+	border-collapse: collapse;
+    vertical-align:middle;
+	width:50%;
+}
+#ajoutB {
+	font-size : 20;
+	padding-left: 50 px;
+}
+#suppB {
+	font-size : 20;
+	padding-left: 50 px;
+}
+#validB {
+	font-size : 20;
+	padding-left: 500 px;
+	margin-left : 500 px;
+	
+}
+#TableProduit
+{
+	border-collapse: collapse;
+	text-align : center;
+    vertical-align:middle;
+	border: 2px solid black;
+	width:100%;
+}
+#TableProduit0
+{
+	border-collapse: collapse;
+	text-align : center;
+    vertical-align:middle;
+	border: 2px solid black;
+	width:95%;
+}
+#table-scroll {
+  height:300px;
+  overflow:auto;  
+  margin-top:20px;
+}
+#verifAjout{
+	text-align : 10 px;
+}
+#prepa {
+	margin : 20px ;
+}
+#totalP {
+	//margin-top : 10px;
+}
+
+@media print {
+    .cache {
+        display:none;
+		//background-color: lightgreen;
+    }
+}

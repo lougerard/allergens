@@ -1,0 +1,11 @@
+$("#addmore").click(
+              function () {
+              var someText = '<td><input class="input3 item" name="name_2" type="text" value="">   </td>';
+              var newDiv = $("<tr>").append(someText);
+              $('#items').append(newDiv);
+              $( ".item" ).autocomplete({
+              source: availableTags,
+              minLength: 1,
+              });
+             }
+            ); 

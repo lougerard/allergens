@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<form>
+  <input list="browsers" name="browser" onfocusout="toto()">
+  <datalist id="browsers">
+    <option value="Internet Explorer">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Chromecast">
+    <option value="Opera">
+    <option value="Safari">
+    <option value="Chrome cast">
+  </datalist>
+  <input type="submit" onclic=toto()>
+</form>
+<script>
+	function toto() {
+		window.alert("toto ok");
+    }
+</script>
+<p><strong>Note:</strong> The datalist tag is not supported in Internet Explorer 9 and earlier versions, or in Safari.</p>
+
+</body>
+</html>

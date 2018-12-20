@@ -1,0 +1,38 @@
+/**************************/
+/*** Ajouter un produit ***/
+/**************************/
+
+0) Ouvrir AjouterProduit.html dans Chrome
+1) Entrer le nom du produit (avec des _ (underscore) pour séparer les mots)
+2) Entrer le code du produit
+3) Cocher tous les allergènes de ce produits
+4) Cliquer sur ajouter
+5) Répéter tant qu'il y a des produits a ajouter
+6) Cliquer sur Valider pour terminer la liste d'ajout
+7) Le fichier validé se trouve dans les téléchargement et est du type : savedProduits.txt
+
+
+/****************************/
+/*** Supprimer un produit ***/
+/****************************/
+
+1) Ouvrir AjouterProduit.html dans Chrome
+2) Entrer le nom du produit a supprimer
+
+/****************************************/
+/*** Remplir la feuille de production ***/
+/****************************************/
+
+0) Ouvrir FicheProduction.html avec Chrome
+1) Charger un fichier et valider
+2) Remplir les repas
+3) Choisir la date
+4) Remplir le tableau de produit en switchant via la touche tabulation
+5) Pour imprimer appuyer sur : ctrl + p
+
+/****************/
+/*** IMPRIMER ***/
+/****************/
+
+IMPRIMER : ctrl + p
+

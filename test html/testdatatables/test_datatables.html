@@ -1,0 +1,57 @@
+<html>
+<head>
+		<title> test datatables </title>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script type="text/javascript" src="DataTables/datatables.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="DataTables/datatables.min.css"/>
+		
+		
+		<meta charset= "utf-8">
+	</head>
+<table id="table_id" class="display">
+    <thead>
+        <tr>
+            <th>Produit</th>
+            <th>Quantité/u</th>
+            <th>Unités</th>
+            <th>Quantité totale</th>
+            <th>Prix</th>
+            <th>Stock</th>
+			
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td> sel</td>
+            <td> 1 kg </td>
+            <td> 1 </td>
+            <td> 1 kg </td>
+            <td> 3 €/kg </td>
+            <td> rouge </td>
+			
+        </tr>
+        <tr>
+            <td> poivre </td>
+            <td> 200 gr</td>
+            <td> 2 </td>
+            <td> 400 gr </td>
+            <td> 15 €/kg </td>
+            <td> vert </td>
+        </tr>
+		<tr>
+            <td> farine </td>
+            <td> 1 kg</td>
+            <td> 5 </td>
+            <td> 5 kg </td>
+            <td> 2 €/kg </td>
+            <td> vert </td>
+        </tr>
+    </tbody>
+</table>
+
+<script>
+	$(document).ready( function () {
+		$('#table_id').DataTable();
+	} );
+</script>
+</html>

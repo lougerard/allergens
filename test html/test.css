@@ -1,0 +1,13 @@
+img {
+		position : absolute;
+			-webkit-transition: opacity 10s;
+			transition: opacity 10s;			
+		}
+		.solid {
+			-webkit-transition: opacity 10s;
+			opacity:1;
+		}
+		.transparent {
+			-webkit-transition: opacity 10s;
+			opacity:0;
+		}

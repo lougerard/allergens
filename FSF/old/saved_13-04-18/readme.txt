@@ -1,0 +1,1 @@
+prend en compte la liste complete des produit passé en fichier joint

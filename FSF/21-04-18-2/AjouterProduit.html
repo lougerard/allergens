@@ -1,0 +1,118 @@
+<!--
+auteur : Louis Gerard
+contact : 0476/02.98.05
+-->
+<html>
+	<head>
+		<title> Foyer Saint Francois </title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="mainPageStyles.css">
+		<script src="scripts.js"></script>
+		<script src="jquery-3.3.1.min.js"></script>
+		<!--<script src="FileSaver.js"></script>-->
+		<!--<script>
+		  $(document).ready(function(){
+			$(".produit").blur(function(){
+				test(this);
+			});
+		  });
+		</script>-->
+		<meta charset= "utf-8">
+	</head>
+
+	<body onload = "printProduit()">
+		<header>
+			<h1> AJOUT ET SUPPRESSION DE PRODUITS </h1>
+			<br><br>
+		</header>
+			<div id=logo>
+				<p>	<img src="duo.jpg" width="150" height="112"> </p>
+			</div>
+		<br>
+		 <h1> 
+			<!--Ajout et suppression de produits  <br><br>-->
+			<input type="file" class="cache" id="myFile">
+			<button value="valider" class="cache" id="readText" onclick="readProduit() , affiche(), shadow()">Valider</button><br />
+		 </h1>
+	
+		<main>
+			<table id="ajoutTable">
+				<tr>
+					<td>
+						<span id="ajout"> 
+							<br>
+							Nouveau produit : <input type="text" name="newP" id="newP"><br>
+							Code : <input type="text" name="newC" id="newC"><br>
+							<p>Allergenes :</p> 
+							<input type="checkbox" name="allergene" value="lait" id="lait">
+							<label for="lait"> lait </label><br>
+							<input type="checkbox" name="allergene" value="gluten" id="gluten">
+							<label for="gluten"> gluten </label><br>
+							<input type="checkbox" name="allergene" value="oeuf" id="oeuf">
+							<label for="oeuf"> oeuf </label><br>
+							<input type="checkbox" name="allergene" value="poisson" id="poisson">
+							<label for="poisson"> poisson </label><br>
+							<input type="checkbox" name="allergene" value="crustace" id="crustace">
+							<label for="crustace"> crustace </label><br>
+							<input type="checkbox" name="allergene" value="mollusque" id="mollusque">
+							<label for="mollusque"> mollusque </label><br>
+							<input type="checkbox" name="allergene" value="arachide" id="arachide">
+							<label for="arachide"> arachide </label><br>
+							<input type="checkbox" name="allergene" value="f. a coque" id="f. a coque">
+							<label for="f. a coque"> f. a coque </label><br>
+							<input type="checkbox" name="allergene" value="moutarde" id="moutarde">
+							<label for="moutarde"> moutarde </label><br>
+							<input type="checkbox" name="allergene" value="sesame" id="sesame">
+							<label for="sesame"> sesame </label><br>
+							<input type="checkbox" name="allergene" value="lupin" id="lupin">
+							<label for="lupin"> lupin </label><br>
+							<input type="checkbox" name="allergene" value="celeri" id="celeri">
+							<label for="celeri"> celeri </label><br>
+							<input type="checkbox" name="allergene" value="sulfite" id="sulfite">
+							<label for="sulfite"> sulfite </label><br>
+							<input type="checkbox" name="allergene" value="soja" id="soja">
+							<label for="soja"> soja </label><br><br>
+							
+							<div>
+								<input type="button" onclick="ajout()" value="ajouter" id="ajoutB">
+								<input type="button" onclick="supprimer()" value="supprimer" id="suppB">
+								<span margin-left="50px">
+									<!--<input type="button" onclick="writeJSON(), alert('Liste de produits ajoutée au fichier')" value="valider" id="validB"><br>-->
+									<input type="button" onclick="writeJSON(), alert('Liste de produits ajoutée au fichier')" value="valider" id="validB">
+								</span>
+								
+							</div>
+							
+							
+							<!--<script>
+								$("#ajoutB").click(function() {
+									var blob = new Blob(["test text"], {type: "text/plain;charset=utf-8"});
+									saveAs(blob, "testfile1.txt");
+								});
+							</script>-->
+						</span>
+					</td>
+					<td>
+						
+						 <B> Table des produits existants : </B> <br><br>
+						 <table id=TableProduit0><tr><td> Produits </td><td> Code ref </td></tr></table>
+						 <div id="table-scroll">
+							<p id="tableauP"> </p>
+						</div>
+						
+					</td>
+					<td>
+						<p> <b>Vérification des ajouts :</b><p>
+						<input type="text" id="verifAjout" readonly>
+					</td>
+				</tr>
+			</table>
+			<!--<p style=text-align:center> <input type="button" onclick="next()" value="Retour" id="validB"> </p> <br> -->
+			<p style=text-align:center> 
+				<input type="image" src="return.png" onclick="retour()" width="50" height="50">
+				<b> RETOUR </b>
+			</p><br> 
+		</main>
+	</body>
+	
+</html>

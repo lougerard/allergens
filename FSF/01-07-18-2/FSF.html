@@ -1,0 +1,113 @@
+<!--
+auteur : Louis Gerard
+contact : 0476/02.98.05
+-->
+
+<html>
+	<head>
+		<title> Duo Catering </title>
+		<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+		<link rel="stylesheet" href="search.css">
+		<link rel="stylesheet" href="styles.css">
+		<link rel="stylesheet" href="mainPageStyles.css">
+		<script src="jquery-3.3.1.min.js"></script>
+		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		
+		<script src="scripts.js"></script>
+		<!--<script src="search.js"></script>-->
+		<script>
+		  $(document).ready(function(){
+			$(".produit").blur(function(){
+				test(this);
+				//console.log(this.id.substr(-1));
+			});
+		  });
+		</script>
+		<script type="text/javascript"> 
+			function stopRKey(evt) { 
+			  var evt = (evt) ? evt : ((event) ? event : null); 
+			  var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null); 
+			  if ((evt.keyCode == 13) && (node.type=="text"))  {return false;} 
+			} 
+			document.onkeypress = stopRKey; 
+		</script>
+	</head>
+
+	<!--<body onload = "creeTab(), readProduit()">-->
+	<body>
+		<header>
+			<h1 class="titre"> Fiche de production </h1>
+			<br><br>
+		</header>
+			<div id=logo>
+				<p>	<img src="duo.jpg" onclick="retour()" width="150" height="112"> </p>
+			</div>
+		<br>
+		 <h1> 
+			<input type="file" class="cache" id="myFile">
+			<button value="valider" class="cache" id="readText" onclick="readProduit(), shadow()">Valider</button>
+			<button value="valider2" class="cache" id="valideAliment" onclick="appel()">Valider 2</button><br>
+			<input type="image" class="cache" src="return.png" onclick="retour()" width="50" height="50">
+			<b class="cache"> RETOUR </b>
+			<!--<input id=tags class=tags placeholder="0">-->
+		 </h1>
+		<div>
+		<h3>
+			<!--Exploitation : Foyer Saint François-->
+			Exploitation : <select id="exploitation" class="selecter"> 
+				<option value="Foyer Saint François">Foyer Saint François</option>
+				<option value="Autre"> Autre </option>
+			</select>
+			<span class="marge">Date : <input type="date" name="date" id="text" style="border:none"> </span>
+		</h3>
+		<p> NB : Remplir le poids correctement et à cru (ex: Penne : 3 kg et pas Penne : 1 carton)</p>
+		
+		<!--<table border="1" width="150" id="cssTable">-->
+		<table border="1" id="cssTable">
+		<tr>	
+			<td> Potage </td>
+			<td> <input type="text" name="repas" id="text" style="width:100%" style="border:none" autocomplete="on"> </td>
+			<td> Souper </td>
+			<td> <input type="text" name="repas" id="text" style="width:100%" style="border:none"> </td>		
+		</tr>
+		<tr>	
+			<td> Plat </td>
+			<td> <input type="text" name="repas" id="text" style="width:100%" style="border:none"> </td>
+			<td> Autre </td>
+			<td> <input type="text" name="repas" id="text" style="width:100%" style="border:none"> </td>		
+		</tr>
+		<tr>	
+			<td> Dessert </td>
+			<td> <input type="text" name="repas" id="text" style="width:100%" style="border:none"> </td>
+			<td> Autre </td>
+			<td> <input type="text" name="repas" id="text" style="width:100%" style="border:none"> </td>		
+		</tr>
+		</table>
+		<BR>
+		</div>
+		<!-------------------------------------->
+		<!-- TABLE DES PRODUITS ET ALLERGENES -->
+		<!-------------------------------------->
+		<!--
+		
+		-->
+		<main>
+			<p id="tabl"> </p>
+		</main>
+		
+		<footer> 
+		Allergènes : lait, gluten, oeuf, poisson, crustace, mollusque, arachide, coques, moutarde, sésame, lupin, céleri, sulfite, soja
+		<table border="1" id="cssTableFooter">
+		<tr>	
+			<td> Cree le : 1/02/2018 </td>
+			<td> Approuve par : K.Dang Duy - RQ <BR> L.Maisin - Admin.delegue </td>
+			<td> PART VI - ENR - <BR> Ficher de production </td>
+			<td> Version 2 </td>
+			<td> Page 1/1 </td>
+		</tr>
+		</table>
+	</footer>
+	</body>
+	
+</html>

@@ -1,0 +1,97 @@
+<html>
+	<head>
+		<title> Fiche de production </title>
+		<link rel="stylesheet" href="styles.css">
+		<script src="scripts.js"></script>
+		<script src="jquery-3.3.1.min.js"></script>
+		<script>
+		  $(document).ready(function(){
+			$(".produit").blur(function(){
+				test(this);
+				//console.log(this.id.substr(-1));
+			});
+		  });
+		</script>
+		<script type="text/javascript"> 
+			function stopRKey(evt) { 
+			  var evt = (evt) ? evt : ((event) ? event : null); 
+			  var node = (evt.target) ? evt.target : ((evt.srcElement) ? evt.srcElement : null); 
+			  if ((evt.keyCode == 13) && (node.type=="text"))  {return false;} 
+			} 
+			document.onkeypress = stopRKey; 
+		</script>
+	</head>
+
+	<body onload = "readProduit()">
+		<table id="logoTitre">
+			<td> <img src="duo.jpg" alt="Mountain View" width="150" height="112"> </td>
+			<td> </td>
+			<td> 
+				<h1> 
+					Fiche de production 
+					<input type="file" class="cache" id="myFile">
+					<button value="valider" class="cache" id="readText" onclick="readProduit()">Valider</button><br />
+			
+				</h1> 
+			</td>
+		</table>
+		<!--<table border="1" width="150" id="cssTableM">
+			 <td> <h1> Fiche de production </h1> </td> 
+		</table> -->
+		<!-- <h2>  Exploitation : Foyer Saint Francois    ;      Date :             20 </h2> -->
+		<header>
+		<h3>
+			Exploitation : Foyer Saint François
+			<span class="marge">Date : <input type="date" name="date" id="text" style="border:none"> </span>
+		</h3>
+		<p> NB : Remplir le poids correctement et à cru (ex: Penne : 3 kg et pas Penne : 1 carton)</p>
+		
+		<!--<table border="1" width="150" id="cssTable">-->
+		<table border="1" id="cssTable">
+		<tr>	
+			<td> Potage </td>
+			<td> <input type="text" name="repas" id="text" style="width:100%" style="border:none" autocomplete="on"> </td>
+			<td> Souper </td>
+			<td> <input type="text" name="repas" id="text" style="width:100%" style="border:none"> </td>		
+		</tr>
+		<tr>	
+			<td> Plat </td>
+			<td> <input type="text" name="repas" id="text" style="width:100%" style="border:none"> </td>
+			<td> Autre </td>
+			<td> <input type="text" name="repas" id="text" style="width:100%" style="border:none"> </td>		
+		</tr>
+		<tr>	
+			<td> Dessert </td>
+			<td> <input type="text" name="repas" id="text" style="width:100%" style="border:none"> </td>
+			<td> Autre </td>
+			<td> <input type="text" name="repas" id="text" style="width:100%" style="border:none"> </td>		
+		</tr>
+		</table>
+		<BR>
+		<BR>
+		</header>
+		<!-------------------------------------->
+		<!-- TABLE DES PRODUITS ET ALLERGENES -->
+		<!-------------------------------------->
+		<!--
+		
+		-->
+		<main>
+			<p id="tabl"> </p>
+			<!--<p> <input type="submit" value="Save to pdf" id="envoi"> </p>-->
+		</main>
+		
+		<footer> 
+		<table border="1" id="cssTableFooter">
+		<tr>	
+			<td> Cree le : 1/02/2018 </td>
+			<td> Approuve par : K.Dang Duy - RQ <BR> L.Maisin - Admin.delegue </td>
+			<td> PART VI - ENR - <BR> Ficher de production </td>
+			<td> Version 2 </td>
+			<td> Page 1/1 </td>
+		</tr>
+		</table>
+	</footer>
+	</body>
+	
+</html>

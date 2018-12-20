@@ -1,0 +1,36 @@
+/*
+auteur : Louis Gerard
+contact : 0476/02.98.05
+*/
+header {
+	background-color: darkblue;
+	//background-color:none;
+}
+
+header h1 {
+    margin: 0;
+	text-align:center;
+	vertical-align:center;
+	color: white;
+	padding-top: 30;
+}
+
+#logo {
+	margin-top:-80;
+	margin-left:20;
+}
+#mid {
+	margin-top:160;
+	//margin-left:30;
+	margin-left:300;
+}
+#textB {
+	font-size:30;
+	font-weight : bold;
+}
+	
+
+html, body {
+    margin: 0;
+    padding: 0;
+}

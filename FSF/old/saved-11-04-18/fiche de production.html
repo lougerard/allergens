@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<title> Foyer Saint Francois </title>
+		<link rel="stylesheet" href="styles.css">
+		<script src="scripts.js"></script>
+		<script src="jquery-3.3.1.min.js"></script>
+		<script>
+		  $(document).ready(function(){
+			$(".produit").blur(function(){
+				test(this);
+				//console.log(this.id.substr(-1));
+			});
+		  });
+		</script>
+	</head>
+	<body>
+	<h1> Préparations </h1>
+	
+	<div id="prepa">
+		<p> <B> 1) Choisir le fichier hôte de tous les produits.</B></p>
+		<input type="file" id="myFile">
+		
+		<p> <B> 2) Valider le choix.</B></p>
+		<button value="valider" id="readText" onclick="readProduit()">Valider</button><br />
+		
+		<p> <B> 3) Accéder à la fiche de production</B></p>
+		<a href="file:C:\Users\louis\Desktop\FSF\FSF.html"> <p> cliquer ici pour accéder a la fiche de production </p> </a>
+	</div>
+	
+	</body>
+	
+</html>

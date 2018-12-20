@@ -1,0 +1,88 @@
+<!--
+auteur : Louis Gerard
+contact : 0476/02.98.05
+-->
+<html>
+	<head>
+		<title> Duo Catering </title>
+		<link rel="stylesheet" href="mainPageStyles.css">
+		<script src="scripts.js"></script>
+		<script src="jquery-3.3.1.min.js"></script>
+		<!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>-->
+		<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css"/>
+		<script src="stock.js"></script>
+		<meta charset= "utf-8">
+	</head>
+
+	<body onload="tabStock()">
+	<!--<body>-->
+		<header>
+			<h1> STOCKS </h1>
+			<br><br>
+		</header>
+			<div id=logo>
+				<p>	<img src="duo.jpg" onclick="retour()" width="150" height="112"> </p>
+			</div>
+			<h1> 
+			<!--stock-->
+			<input type="file" class="cache" id="myFile">
+			<button value="valider" class="cache" id="readText" onclick="tabStock()">Valider</button><br />
+		 </h1>
+		<br>
+		<main>
+			<!--
+			<table id="table_id" class="display">
+				<thead>
+					<tr>
+						<th>Produit</th>
+						<th>Quantité/u</th>
+						<th>Unités</th>
+						<th>Quantité totale</th>
+						<th>Stock</th>
+						<th>Commander</th>
+						
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td> sel</td>
+						<td> 1 kg </td>
+						<td> 1 </td>
+						<td> 1 kg </td>
+						<td> rouge </td>
+						<td> <img src="com.png" onclick="addConfirm()" width="20" height="20"> </td>
+					</tr>
+					<tr>
+						<td> poivre</td>
+						<td> 200 g </td>
+						<td> 5 </td>
+						<td> 1 kg </td>	
+						<td> vert </td>
+						<td> <img src="com.png" onclick="addConfirm()" width="20" height="20"> </td>
+					</tr>
+				</tbody>
+			</table>
+			-->
+			<p id="tab"> </p>
+			
+			
+			
+			
+		</main>
+		<footer>
+			<p style=text-align:center> 
+				<input type="image" src="return.png" onclick="retour()" width="50" height="50">
+				<b> RETOUR </b>
+			</p><br> 
+		</footer>
+
+	</body>
+	
+	
+	<script>
+	$(document).ready( function () {
+		$('#table_id').DataTable();
+	} );
+</script>
+</html>
